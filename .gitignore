@@ -7,3 +7,5 @@ csrf_state.txt
 redirect_uri.txt
 soundcloud_token.txt
 refresh_token.txt
+
+track_data_example.json
