@@ -97,6 +97,10 @@ def refresh_access_token():
             with open(ACCESS_TOKEN_FILE, "w") as f:
                 f.write(token_info["access_token"])
             print(f"💾 New access token saved to '{ACCESS_TOKEN_FILE}'")
+        if "refresh_token" in token_info:
+            with open(REFRESH_TOKEN_FILE, "w") as f:
+                f.write(token_info["refresh_token"])
+            print(f"💾 New refresh token saved to '{REFRESH_TOKEN_FILE}'")
     else:
         print(f"\n❌ Refresh failed ({resp.status_code}):\n{resp.text}")
 
