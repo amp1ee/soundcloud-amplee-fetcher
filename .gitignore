@@ -1,1 +1,9 @@
+auth_code.txt
+client_id.txt
+client_secret.txt
+code_verifier.txt
+code_challenge.txt
+csrf_state.txt
+redirect_uri.txt
 soundcloud_token.txt
+refresh_token.txt
