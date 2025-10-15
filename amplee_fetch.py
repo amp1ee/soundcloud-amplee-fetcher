@@ -30,7 +30,10 @@ def fetch_likes(limit=30):
             title = track.get("title")
             artist = track.get("user", {}).get("username")
             url = track.get("permalink_url")
+            genre = track.get("genre")
+            tag_list = track.get("tag_list")
             print(f"{i}. {artist} – {title}")
+            print(f"Genre: {genre}; Tags: {tag_list}")
             print(f"   {url}\n")
     else:
         print(f"Error: {response.status_code} - {response.text}")
